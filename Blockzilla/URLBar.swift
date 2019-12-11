@@ -108,7 +108,7 @@ class URLBar: UIView {
     private var hideToolsetConstraints = [Constraint]()
     private var showToolsetConstraints = [Constraint]()
 
-    private var compressBar = false {
+    private var compressBar = true {
         didSet {
             guard oldValue != compressBar else { return }
             activateConstraints(compressBar, shownConstraints: compressedBarConstraints, hiddenConstraints: expandedBarConstraints)
